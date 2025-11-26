@@ -5,19 +5,20 @@ import { defineConfig } from "vite";
 // https://vite.dev/config/
 export default defineConfig({
 	plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@pages": path.resolve(__dirname, "./src/pages"),
-      "@projects": path.resolve(__dirname, "./src/projects"),
-      "@components": path.resolve(__dirname, "./src/common/components"),
-      "@common": path.resolve(__dirname, "./src/common"),
-      "@utils": path.resolve(__dirname, "./src/common/utils"),
-      "@data": path.resolve(__dirname, "./src/data"),
-      "@assets": path.resolve(__dirname, "./src/common/assets"),
-      "@hooks": path.resolve(__dirname, "./src/common/hooks"),
-      "@hoc": path.resolve(__dirname, "./src/common/hoc"),
-      "@shared": path.resolve(__dirname, "./src/common/shared")
-    },
-  },
+	base: process.env.NODE_ENV === "production" ? "./" : "/",
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, "./src"),
+			"@pages": path.resolve(__dirname, "./src/pages"),
+			"@projects": path.resolve(__dirname, "./src/projects"),
+			"@components": path.resolve(__dirname, "./src/common/components"),
+			"@common": path.resolve(__dirname, "./src/common"),
+			"@utils": path.resolve(__dirname, "./src/common/utils"),
+			"@data": path.resolve(__dirname, "./src/data"),
+			"@assets": path.resolve(__dirname, "./src/common/assets"),
+			"@hooks": path.resolve(__dirname, "./src/common/hooks"),
+			"@hoc": path.resolve(__dirname, "./src/common/hoc"),
+			"@shared": path.resolve(__dirname, "./src/common/shared"),
+		},
+	},
 });
