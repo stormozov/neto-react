@@ -13,17 +13,21 @@
       "@/*": ["src/*"],
       "@pages": ["src/pages"],
       "@pages/*": ["src/pages/*"],
-      "@components": ["src/components"],
-      "@components/*": ["src/components/*"],
+      "@projects": ["src/projects"],
+      "@projects/*": ["src/projects/*"],
+      "@components": ["src/common/components"],
+      "@components/*": ["src/common/components/*"],
+      "@common": ["src/common"],
+      "@common/*": ["src/common/*"],
       "@utils": ["src/utils"],
       "@utils/*": ["src/utils/*"],
       "@data/*": ["src/data/*"],
-      "@assets/*": ["src/assets/*"],
-      "@hooks": ["src/hooks"],
-      "@hooks/*": ["src/hooks/*"],
+      "@assets/*": ["src/common/assets/*"],
+      "@hooks": ["src/common/hooks"],
+      "@hooks/*": ["src/common/hooks/*"],
       "@hoc": ["src/hoc"],
       "@hoc/*": ["src/hoc/*"],
-      "@shared/*": ["src/shared/*"]
+      "@shared/*": ["src/common/shared/*"]
     },
 
     /* Bundler mode */

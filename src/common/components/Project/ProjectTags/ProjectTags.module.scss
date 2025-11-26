@@ -1,0 +1,18 @@
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+  margin-top: 0.6rem;
+
+  &__tag {
+    padding: 0.2rem 0.6rem;
+
+    border: 1px solid #4b4b4b;
+    border-radius: 6px;
+
+    font-size: 0.8rem;
+
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,67 @@
+@use "@common/styles/mixins" as *;
+
+button {
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+
+.btn {
+  // Общие стили
+  gap: 0.6rem;
+
+  padding: 0.6em 1.2em;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-weight: 500;
+
+  // Варианты стилей
+  &--primary {
+    background-color: #646cff;
+    color: #ffffff;
+
+    &:not(:disabled):hover {
+      background-color: #535bf2;
+    }
+  }
+
+  // Размеры
+  &--small {
+    font-size: 0.8rem;
+  }
+
+  &--medium {
+    font-size: inherit;
+  }
+
+  &--large {
+    font-size: 1.2rem;
+  }
+
+  // Позиционирование
+  &--position {
+    &-start {
+      @include flex-start-center;
+    }
+
+    &-center {
+      @include flex-center;
+    }
+
+    &-end {
+      @include flex-end-center;
+    }
+  }
+
+  // Только иконка
+  &--icon-only {
+    padding: 0.6em;
+  }
+}

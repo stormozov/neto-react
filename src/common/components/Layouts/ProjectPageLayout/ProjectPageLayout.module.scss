@@ -1,0 +1,19 @@
+.project-page {
+  &__header {
+    display: grid;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+
+    &-project {
+      font-style: italic;
+      color: #707070;
+    }
+
+    &-desc {
+      &-short {
+        margin-top: 0.6rem;
+      }
+    }
+  }
+}

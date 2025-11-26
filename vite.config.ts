@@ -9,13 +9,15 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
       "@pages": path.resolve(__dirname, "./src/pages"),
-      "@components": path.resolve(__dirname, "./src/components"),
-      "@utils": path.resolve(__dirname, "./src/utils"),
+      "@projects": path.resolve(__dirname, "./src/projects"),
+      "@components": path.resolve(__dirname, "./src/common/components"),
+      "@common": path.resolve(__dirname, "./src/common"),
+      "@utils": path.resolve(__dirname, "./src/common/utils"),
       "@data": path.resolve(__dirname, "./src/data"),
-      "@assets": path.resolve(__dirname, "./src/assets"),
-      "@hooks": path.resolve(__dirname, "./src/hooks"),
-      "@hoc": path.resolve(__dirname, "./src/hoc"),
-      "@shared": path.resolve(__dirname, "./src/shared")
+      "@assets": path.resolve(__dirname, "./src/common/assets"),
+      "@hooks": path.resolve(__dirname, "./src/common/hooks"),
+      "@hoc": path.resolve(__dirname, "./src/common/hoc"),
+      "@shared": path.resolve(__dirname, "./src/common/shared")
     },
   },
 });

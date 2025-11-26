@@ -1,12 +1,30 @@
+import { Outlet } from "react-router";
+import "./App.scss";
+
 /**
  * Основной компонент приложения, точка входа
  */
-function App() {
+export default function App() {
 	return (
-		<div>
-			<h1>App</h1>
-		</div>
-	)
-}
+		<div className="App">
+			<main className="main">
+				<Outlet />
+			</main>
 
-export default App;
+			<footer className="footer">
+				<div className="container">
+					<div className="footer__copyright">
+						<a
+							href="https://github.com/stormozov/neto-react"
+							target="_blank"
+							rel="noopener"
+							className="footer__link"
+						>
+							© 2025 stormozov
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	);
+}

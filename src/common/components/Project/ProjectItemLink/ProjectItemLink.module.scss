@@ -1,0 +1,31 @@
+.project-item {
+  display: block;
+
+  padding: 1.25em;
+
+  background-color: transparent;
+  border: 1px solid #4b4b4b;
+  border-radius: 6px;
+
+  font-size: 1rem;
+  color: inherit;
+
+  &:hover {
+    background-color: #4b4b4b;
+    color: #ffffff;
+    transform: translateY(-6px);
+
+    .project-item__tags {
+      li {
+        background-color: #242424;
+      }
+    }
+  }
+
+  &__description {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #a0a0a0;
+  }
+}

@@ -1,0 +1,28 @@
+.shop-item-demo-page {
+  display: grid;
+  gap: 1.6em;
+
+  &__section {
+    display: grid;
+    gap: 1.6em;
+
+    padding: 1.6em;
+    border: 1px solid #414141;
+    border-radius: 8px;
+
+    @media (max-width: 500px) {
+      padding: 1em;
+    }
+  }
+
+  &__component {
+    padding: 1.6em;
+    margin: 0.4em auto 0;
+
+    max-width: 580px;
+    width: 100%;
+
+    background: #2d2d2d;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,21 @@
+.projects-list {
+  --max-column-width: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--max-column-width), 1fr)
+  );
+  gap: 1rem;
+
+  margin-top: 2rem;
+
+  &__item {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 500px) {
+    --max-column-width: 100%;
+  }
+}
