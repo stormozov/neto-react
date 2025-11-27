@@ -1,0 +1,30 @@
+.shop-item-demo-page {
+  display: grid;
+  gap: 1.6em;
+
+  &__section {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 1.6em;
+
+    padding: 1.6em;
+    border: 1px solid #414141;
+    border-radius: 8px;
+
+    @media (max-width: 720px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 500px) {
+      padding: 1em;
+    }
+  }
+
+  &__task-info {
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

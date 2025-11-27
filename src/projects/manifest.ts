@@ -17,4 +17,17 @@ export const PROJECT_LIST: IProjectList[] = [
 			() => import("./001-component-shop-item/Pages/ShopItemDemoPage"),
 		),
 	},
+	{
+		id: "calendar",
+		order: 2,
+		content: {
+			title: "Calendar",
+			descriptionShort:
+				"Создать React-компонет Calendar, который бы показывал текущую дату и текущий месяц.",
+			tags: ["React", "Typescript"],
+		},
+		Component: React.lazy(
+			() => import("./002-calendar/Pages/CalendarDemoPage"),
+		),
+	},
 ];

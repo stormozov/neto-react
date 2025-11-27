@@ -1,0 +1,99 @@
+@use "@common/styles/mixins" as *;
+
+.ui-datepicker {
+  --base-font-size: 1rem; // 16px
+
+  overflow: hidden;
+  
+  max-width: 300px;
+  width: 100%;
+  height: max-content;
+
+  background: #414141;
+  border: 2px solid #ddd;
+  border-radius: 0.25em; // 4px → 0.25em
+
+  font-size: var(--base-font-size); // 1rem = 16px
+
+  &__material-header {
+    padding: 0.9375em; // 15px → 0.9375em
+    background: #2c3e50;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__material-day {
+    font-size: 0.875em; // 14px → 0.875em
+    margin-bottom: 0.35716em; // 5px → 0.35716em
+  }
+
+  &__material-date {
+    @include flex-center;
+    gap: 0.3125em; // 5px → 0.3125em
+  }
+
+  &__material-day-num {
+    font-size: 3em; // 48px → 3em
+    font-weight: bold;
+  }
+
+  &__material-month,
+  &__material-year {
+    font-size: 1em; // 16px → 1em
+  }
+
+  &__header {
+    padding: 0.625em; // 10px → 0.625em
+    background: #34495e;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 1em; // 16px → 1em
+  }
+
+  &__calendar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+      padding: 0.5em; // 8px → 0.5em
+      background: #333232;
+      font-size: 0.75em; // 12px → 0.75em
+      font-weight: normal;
+      text-align: center;
+    }
+
+    td {
+      padding: 0.5em; // 8px → 0.5em
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.2s;
+
+      &:hover {
+        background: #333232;
+      }
+    }
+  }
+
+  &__calendar-day {
+    &--today {
+      background: #3498db;
+      border-radius: 0.25em; // 4px → 0.25em
+      font-weight: bold;
+      color: white;
+    }
+
+    &--other-month {
+      color: #aaa;
+      opacity: 0.7;
+    }
+  }
+
+  &__week-end {
+    background: #494949;
+  }
+}
