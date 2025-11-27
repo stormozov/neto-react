@@ -1,0 +1,16 @@
+.cards-grid {
+  --grid-columns-min: 300px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--grid-columns-min), 1fr)
+    );
+    gap: 0.5rem;
+
+    @media (max-width: 700px) {
+      --grid-columns-min: 150px;
+    }
+  }
+}

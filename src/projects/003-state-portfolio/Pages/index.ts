@@ -1,2 +1,2 @@
 export * from "./StatePortfolioDemoPage";
-export { default as DemoPage } from "./StatePortfolioDemoPage";
+export { default as StatePortfolioDemoPage } from "./StatePortfolioDemoPage";

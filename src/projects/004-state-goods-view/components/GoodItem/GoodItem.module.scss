@@ -1,0 +1,44 @@
+.good-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6em;
+
+  padding: 1em;
+
+  background-color: #2d2d2d;
+  border-radius: 0.5em;
+
+  font-size: 1rem;
+
+  @media (max-width: 620px) {
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 80px;
+    border-radius: 0.5em;
+  }
+
+  &__color {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+
+    &-block {
+      width: 0.6em;
+      height: 0.6em;
+      border-radius: 50%;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+  &__price {
+    font-weight: 400;
+  }
+}

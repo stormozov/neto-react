@@ -1,0 +1,13 @@
+.switch-view {
+  display: block;
+  width: max-content;
+
+  &--right {
+    margin-left: auto;
+  }
+
+  &:hover {
+    color: #c02828;
+    transform: scale(1.1) rotate(6deg);
+  }
+}
