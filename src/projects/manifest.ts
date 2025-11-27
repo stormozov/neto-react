@@ -23,11 +23,26 @@ export const PROJECT_LIST: IProjectList[] = [
 		content: {
 			title: "Calendar",
 			descriptionShort:
-				"Создать React-компонет Calendar, который бы показывал текущую дату и текущий месяц.",
+				"Создать React-компонент Calendar, который бы показывал текущую дату и текущий месяц.",
 			tags: ["React", "Typescript"],
 		},
 		Component: React.lazy(
 			() => import("./002-calendar/Pages/CalendarDemoPage"),
+		),
+	},
+	{
+		id: "state-portfolio-filter",
+		order: 3,
+		content: {
+			title: "Портфолио с фильтрами",
+			descriptionShort:
+				"Веб-приложение для отображения портфолио проектов с возможностью их фильтрации по категориям",
+			descriptionLong:
+				"Необходимо создать веб-приложение для отображения портфолио проектов с возможностью их фильтрации по категориям. Основная цель — отработать навыки управления состоянием и взаимодействия компонентов в React. Приложение должно быть реализовано как набор компонентов с чётким разделением ответственности между ними.",
+			tags: ["React", "Typescript"],
+		},
+		Component: React.lazy(
+			() => import("./003-state-portfolio/Pages/StatePortfolioDemoPage"),
 		),
 	},
 ];

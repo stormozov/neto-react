@@ -1,0 +1,23 @@
+.project-list {
+  column-count: 3;
+  column-gap: 10px;
+
+  &__item {
+    break-inside: avoid; // чтобы элемент не разрывался между колонками
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    column-count: 2;
+  }
+
+  @media (max-width: 480px) {
+    column-count: 1;
+  }
+}
